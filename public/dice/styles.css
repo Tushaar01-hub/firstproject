@@ -1,0 +1,43 @@
+.container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+
+}
+
+body {
+  background-color: #370617;
+}
+
+h1 {
+  margin: 30px;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 5px 0 #e7c8c3;
+  font-size: 8rem;
+  color: #f8edeb;
+}
+
+p {
+  font-size: 2rem;
+  color: #f8edeb;
+  font-family: 'Indie Flower', cursive;
+}
+
+img {
+  width: 80%;
+}
+
+footer {
+  margin-top: 5%;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+
+}
