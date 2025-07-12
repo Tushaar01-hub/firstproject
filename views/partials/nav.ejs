@@ -57,25 +57,18 @@
         </header>
         <div class="nav-scroller py-1 mb-3 border-bottom">
           <nav class="nav nav-underline justify-content-between">
-            <a class="nav-item nav-link link-body-emphasis active" href="/home"
-              >Home</a
-            >
-            <a class="nav-item nav-link link-body-emphasis" href="/technology"
-              >Technology</a
-            >
-            <a class="nav-item nav-link link-body-emphasis" href="/design">Design</a>
-            <a class="nav-item nav-link link-body-emphasis" href="/culture">Culture</a>
-            <a class="nav-item nav-link link-body-emphasis" href="/business"
-              >Business</a
-            >
-            <a class="nav-item nav-link link-body-emphasis" href="/politics"
-              >Politics</a
-            >
-            <a class="nav-item nav-link link-body-emphasis" href="/simon">Simon Game</a>
-            <a class="nav-item nav-link link-body-emphasis" href="/tindog">TinDog</a>
-            <a class="nav-item nav-link link-body-emphasis" href="dice">Dice Game</a>
-            <a class="nav-item nav-link link-body-emphasis" href="drum">Drum kit</a>
-          </nav>
+              <a class="nav-item nav-link link-body-emphasis <%= activePage === 'home' ? 'active' : '' %>" href="/">Home</a>
+              <a class="nav-item nav-link link-body-emphasis <%= activePage === 'technology' ? 'active' : '' %>" href="/technology">Technology</a>
+              <a class="nav-item nav-link link-body-emphasis <%= activePage === 'design' ? 'active' : '' %>" href="/design">Design</a>
+              <a class="nav-item nav-link link-body-emphasis <%= activePage === 'culture' ? 'active' : '' %>" href="/culture">Culture</a>
+              <a class="nav-item nav-link link-body-emphasis <%= activePage === 'business' ? 'active' : '' %>" href="/business">Business</a>
+              <a class="nav-item nav-link link-body-emphasis <%= activePage === 'politics' ? 'active' : '' %>" href="/politics">Politics</a>
+              <a class="nav-item nav-link link-body-emphasis <%= activePage === 'simon' ? 'active' : '' %>" href="/simon">Simon Game</a>
+              <a class="nav-item nav-link link-body-emphasis <%= activePage === 'tindog' ? 'active' : '' %>" href="/tindog">TinDog</a>
+              <a class="nav-item nav-link link-body-emphasis <%= activePage === 'dice' ? 'active' : '' %>" href="/dice">Dice Game</a>
+              <a class="nav-item nav-link link-body-emphasis <%= activePage === 'drum' ? 'active' : '' %>" href="/drum">Drum kit</a>
+        </nav>
+
         </div>
       </div>
     </section>
