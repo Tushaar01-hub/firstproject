@@ -6,6 +6,7 @@ import bodyparser from "body-parser";
 const __dirname=dirname(fileURLToPath(import.meta.url));
 const app = express();
 const port = 3000;
+app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({extended:true}));
 var email='';
 var pass='';
@@ -57,8 +58,8 @@ app.get("/drum",(req,res)=>{
 app.get("/dice",(req,res)=>{
   res.sendFile(__dirname + "/public/dice/dicee.html");
 })
-app.use(signin);
-app.post("/submit",(req,res)=>{
+
+app.post("/submit",signin,(req,res)=>{
   const email=req.body.email;
   res.render("welcome.ejs",{userEmail:email});
 })
