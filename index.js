@@ -22,7 +22,7 @@ app.set('view engine','ejs');
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  res.render("home.ejs");
+  res.render("home.ejs",{ activePage: "home" });
 });
 app.get("/subscribe",(req,res)=>{
   res.render("subscribe.ejs");
@@ -32,19 +32,19 @@ app.get("/signup",(req,res)=>{
 })
 
 app.get("/technology",(req,res)=>{
-  res.render("technology.ejs");
+  res.render("technology.ejs",{ activePage: "technology" });
 });
 app.get("/design",(req,res)=>{
   res.redirect('https://www.design.com');
 });
 app.get("/culture",(req,res)=>{
-  res.render("culture.ejs");
+  res.render("culture.ejs",{ activePage: "culture" });
 })
 app.get("/business",(req,res)=>{
-  res.render("business.ejs");
+  res.render("business.ejs",{ activePage: "business" });
 })
 app.get("/politics",(req,res)=>{
-  res.render("politics.ejs");
+  res.render("politics.ejs",{ activePage: "politics" });
 })
 app.get("/simon",(req,res)=>{
   res.sendFile(__dirname + "/public/simoon/index.html");
